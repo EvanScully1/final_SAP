@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    background-color: rgb(255, 248, 238);
+}
+header {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    padding: 0;
+    height: 110px;
+}
+
+body {
+    margin: auto;
+    /* max-width: 1200px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/imgA.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    font-size: 100%;
+    /* background-image: linear-gradient(black, silver); */
+}
+
+/* ~~~~~~~ Nav_bar ~~~~~~~ */
+
+#nav_bar ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+#nav_bar ul li {
+    width: 20%; 
+}
+
+#nav_bar ul li a {
+    display: block;
+    padding: .75em 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.254);
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 248, 238);
+}
+
+#nav_bar ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    border-left: 4px solid rgb(86, 130, 130);
+}
+
+#nav_bar ul ul li a {
+    text-align: left;
+    padding: .75em 1em;
+}
+
+#nav_bar ul li:hover > ul {
+    display: block;
+}
+
+#nav_bar a:hover {
+    color: black;
+    background-color: rgb(86, 130, 130);
+    /* border: .5px solid rgba(255, 248, 238, 0.39); */
+}
+.one {
+    margin-top: 4em;
+    color: rgb(255, 248, 238);
+    font-size: 600%;
+    opacity: 40%;
+    font-weight: bold;
+}
+
+.two {
+    background-color: rgb(86, 130, 130);
+    margin-top: 28em;
+}
+
+.two h3 { 
+    font-size: 25px;
+    margin-bottom: .5em;
+}
+
+.two p {
+    font-size: 20px;
+}
+
+.second_Section {
+    color: black;
+    background-color: rgb(86, 130, 130, 0.85);
+    margin: 0 8vh;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px;
+    margin: 1em 0;
+}
+
+.three {
+    background-color: white;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1.5em;
+    font-size: 85%;
+    background-color: rgb(86, 130, 130);
+    color: rgb(0, 0, 0);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#mobilemenu {
+    display: none;
+}

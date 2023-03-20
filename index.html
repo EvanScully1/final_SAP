@@ -4,19 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="final_main.css">
+    <link rel="stylesheet" href="css/final_main.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <title>Scully Aerial Photography Final</title>
 </head>
 <body>
-    <header>
-        <h1>Scully Aerial Photography</h1>
-        <h2>[currently under construciton]</h2>
+    <header id="header">
+        <h1>
+            <a href="#" class="logo">
+                <img src="../Final Website/images/polish_save.PNG" alt="Scully Aerial Photography" id="logo">
+            </a>
+        </h1>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Real Estate </a></li>
+                        <li><a href="#">Marine</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Cinematography</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>
-            Established in 2021 by Evan Scully, Scully Aerial Photography is an aerial photography business located in mostly is Massachusetts and Rhode Island. This website will be another version of the current website which is under construction, and will include multiple pages which can be mostly found in the nav bar. Futhermore, some of these pages will be named: "Portfolio," "Services," "Real Estate," "Marine," "Events," "Mapping," "Cinematography," "About," and "Contact." Each of these pages will contain content regarding the name of the page, including photos and videos for most of them. I will have a list (li) in the nav that goes by the order: Home | Portfolio | Services (ul) | About | Contact . Inside "Services" will be sub pages: Real Estate | Marine | Events | Mapping | Cinematography . The current theme on the page is temporary and will most likely be changed to a grayscale theme. 
-        </p>
+        <section class="one">
+            <div>Scully Aerial Photography</div>
+        </section>
+        <section class="two">
+            <h3>About Scully Aerial Photography</h3>
+            <p>Established in the winter of 2021, Scully Aerial Photography covers <b>real estate, yachts, events, and other custom</b> aerial photoshoots. The magazine-quality photoshoots and high-quality cinematic shoots take place in either <b> Massachusetts, Rhode Island, and Eatern Connecticut.</b> Contact Scully Aerial Photography today to book a service! For more, click 'About' above. </p>
+        </section>
+        <section class="three">
+            <p>The Rest is Under Construction</p>
+        </section>
     </main>
-    <footer>Scully Aerial Photography Footer</footer>
+    <footer>
+		<p><span id="time"></span> Scully Aerial Photography</p>
+	</footer>
+	<!-- JavaScript -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("time").innerHTML = d.getFullYear();
+        }
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.opacity = "100%"
+                document.getElementById("header").style.fontSize = "69%"
+
+            } else {
+                document.getElementById("header").style.backgroundColor = "rgb(0, 0, 0, 0.254)";
+                document.getElementById("header").style.fontSize = "100%"
+
+
+            }
+        }
+    </script>
 </body>
 </html>
